@@ -16,19 +16,18 @@ body {
     's1 s2 s3'
     'ft ft ft'
     ;
-    grid-template-rows: 150px 3.5rem 13rem 1px auto 20rem;
+    grid-template-rows:  10rem 3rem 10rem 1px 25rem 20rem;
 }
 
 header {
     display: grid;
     grid-area: hd;
-    width: 100vw;
-    height: 150px;
+    width: 100%;
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 6rem;
     font-family: 'Montserrat';
     font-weight: bold;
 }
@@ -37,31 +36,30 @@ nav {
     display: grid;
     grid-area: nv;
     width: 100vw;
-    height: 3.5rem;
     background-color: rgb(32, 32, 32);
     display: flex;
     font-family: 'Montserrat';
+    font-size: 1rem;
     font-weight: bold;
     justify-content: space-evenly;
     align-items: center;
     border-top: solid rgb(43, 43, 43);
-    border-bottom: solid rgb(43, 43, 43);
 }
 
 #sträck1 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 
 #sträck2 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 #sträck3 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 
@@ -78,11 +76,19 @@ nav {
 #titel p {
     display: flex;
     justify-content: center;
-    align-content: center;
-    padding-top: 1rem;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.509);
+}
+
+#undertitel p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 1rem;
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.771);
 }
@@ -98,7 +104,8 @@ section {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    border: solid red;
+    padding-left: 1.2rem;
+    /*border: solid red;*/
 }
 
 #s1 {
@@ -108,9 +115,11 @@ section {
     width: 25vw;
 }
 
-#s1 img {
-    height: 40vh;
-    width: auto;
+#s1-img {
+    height: 19rem;
+    width: 19rem;
+    background-image: url("../img/produkter/pump.jpg");
+    background-size: cover;
 }
 
 #s2 {
@@ -121,9 +130,11 @@ section {
 
 }
 
-#s2 img {
-    height: 40vh;
-    width: auto;
+#s2-img {
+    height: 19rem;
+    width: 19rem;
+    background-image: url("../img/produkter/kreatin.jpg");
+    background-size: cover;
 }
 
 #s3 {
@@ -133,9 +144,11 @@ section {
     width: 25vw;
 }
 
-#s3 img {
-    height: 40vh;
-    width: auto;
+#s3-img {
+    height: 19rem;
+    width: 19rem;
+    background-image: url("../img/produkter/pwo.jpg");
+    background-size: cover;
 }
 
 footer {

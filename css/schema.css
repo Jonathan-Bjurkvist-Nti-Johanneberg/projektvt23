@@ -16,19 +16,18 @@ body {
     'l1 l1 l1'
     's3 s3 s3'
     ;
-    grid-template-rows: 150px 3.5rem 10rem 14rem 2rem 45rem;
+    grid-template-rows: 10rem 3rem 13vh 48vh 2vh 35rem;
 }
 
 header {
     display: grid;
     grid-area: hd;
-    width: 100vw;
-    height: 150px;
+    width: 100%;
     background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 6rem;
     font-family: 'Montserrat';
     font-weight: bold;
 }
@@ -37,31 +36,32 @@ nav {
     display: grid;
     grid-area: nv;
     width: 100vw;
-    height: 3.5rem;
     background-color: rgb(32, 32, 32);
     display: flex;
     font-family: 'Montserrat';
+    font-size: 1rem;
     font-weight: bold;
     justify-content: space-evenly;
     align-items: center;
     border-top: solid rgb(43, 43, 43);
     border-bottom: solid rgb(43, 43, 43);
+
 }
 
 #sträck1 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 
 #sträck2 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 #sträck3 {
     border-left: solid rgb(43, 43, 43);
-    height: 3.5rem;
+    height: 3rem;
     width: 1px;
 }
 
@@ -70,25 +70,25 @@ nav {
     grid-area: s1;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 3rem;
-    margin-left: 1rem;
+    font-size: 2rem;
+    margin-left: 4vw;
     margin-top: 1rem;
-    width: 60vw;
+    width: 50vw;
 }
 
 #s2 {
     display: grid;
     grid-area: s2;
     font-size: 1.5rem;
-    margin-left: 1rem;
-    width: 60vw;
+    margin-left: 4vw;
+    width: 40vw;
 }
 
 aside {
     display: grid;
     grid-area: as;
-    width: 28vw;
-    height: 28vw;
+    width: 23rem;
+    height: 23rem;
     margin-top: 3rem;
     background-image: url("../img/Emil-face.jpg");
     background-size: cover;
@@ -108,7 +108,7 @@ aside {
 #s3 {
     display: grid;
     grid-area: s3;
-    margin: 6rem;
+    margin: 4rem;
     background-color: rgb(32, 32, 32);
     grid-template-areas: 
     'img img pt pt'
@@ -116,8 +116,8 @@ aside {
     'img img sb sb'
     'img img af af'
     ;
-    grid-template-rows: 3rem 3rem 15rem 3rem;
-    box-shadow: 0px 0px 40px black;
+    grid-template-rows: 5vh 4vh 9rem 1rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.787);
 }
 
 #s3 #produkt-schema-img {
@@ -125,9 +125,9 @@ aside {
     grid-area: img;
     background-image: url("../img/schema-produkt.jpg");
     background-size: cover;
-    margin: 2rem;
-    height: 29rem;
-    width: 29rem;
+    margin: 3vh;
+    height: 24.5rem;
+    width: 24.5rem;
     justify-content: left;
     align-items: center;
     box-shadow: 0px 0px 20px black;
@@ -136,11 +136,11 @@ aside {
 #s3-titel {
     display: grid;
     grid-area: pt;
-    margin: 2rem 2rem 2rem 0rem;
+    margin: 2vh 2vh 2vh 0vh;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #s3-pris {
@@ -150,24 +150,24 @@ aside {
     color: rgb(224, 224, 224);
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #s3-beskrivning {
     display: grid;
     grid-area: sb;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding-right: 2rem;
 }
 
 #s3-affär {
     display: grid;
     grid-area: af;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
-    margin-top: 4rem;
+    margin-top: 8vh;
     padding-right: 2rem;
 }
 
