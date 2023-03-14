@@ -4,19 +4,19 @@ body {
     font-weight: lighter;
 }
 
-#wrapper-index {
+#wrapper {
+    display: grid;
     min-height: 100vh;
     width: 100vw;
-    display: grid;
     grid-template-areas:
     'hd hd hd'
     'nv nv nv'
-    'be be be'
-    'li li li'
-    's1 s2 s3'
-    'ft ft ft'
+    's1 s1 as'
+    's2 s2 as'
+    's3 s3 as'
+    's3 s3 as2'
     ;
-    grid-template-rows: 10rem 3rem 10rem 1px 25rem 20rem;
+    grid-template-rows: 10rem 3rem 13vh 35vh 15vh;
 }
 
 header {
@@ -44,6 +44,8 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     border-top: solid rgb(43, 43, 43);
+    border-bottom: solid rgb(43, 43, 43);
+
 }
 
 #sträck1 {
@@ -63,93 +65,53 @@ nav {
     width: 1px;
 }
 
-#beskrivning {
-    grid-area: be;
-    background-image: url("../img/bakgrund.jpg");
-    width: 100vw;
-    background-size: cover;
-    background-position-y: -10rem;
-    background-position: center;
-    border-top: solid rgb(43, 43, 43);
-    display: flex;
-    justify-content: space-between;
-}
-
-#beskrivning p {
-    margin-left: 3rem;
-    width: 40vw;
-    font-size: 1.1rem;
-    font-family: Roboto;
-    font-weight: lighter;
-    color: white;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
-
-#tiktok {
-    display: block;
-    width: 40px;
-    height: auto;
-    margin: 4vh;margin-top: 13vh;
-}
-
-#line_be-section {
-    grid-area: li;
-    border-top: 2px solid rgb(217, 217, 217);
-}
-
-section {
-    margin: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    padding-left: 1.2rem;
-}
-
 #s1 {
     display: grid;
     grid-area: s1;
-    text-align: center;
-    font-size: 1rem;
-    width: 25vw;
-}
-
-#s1 img {
-    height: 19rem;
-    width: 19rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 4vw;
+    margin-top: 1rem;
+    width: 50vw;
 }
 
 #s2 {
     display: grid;
     grid-area: s2;
-    text-align: center;
-    font-size: 1rem;
-    width: 25vw;
+    font-size: 1.5rem;
+    margin-left: 4vw;
+    width: 40vw;
 }
 
-#s2 img {
-    height: 19rem;
-    width: 19rem;
+aside {
+    display: grid;
+    grid-area: as;
+    width: 23rem;
+    height: 23rem;
+    margin-top: 3rem;
+    background-image: url("../img/Emil-om.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.584);
 }
 
 #s3 {
     display: grid;
     grid-area: s3;
-    text-align: center;
-    font-size: 1rem;
-    width: 25vw;
+    font-size: 1.5rem;
+    margin-left: 4vw;
+    width: 40vw;
 }
 
-#s3 img {
-    height: 19rem;
-    width: 19rem;
-}
-
-footer {
+#as2 {
     display: grid;
-    grid-area: ft;
-    background-color: black;
-    color: white;
+    grid-area: as2;
+    width: 23rem;
+    height: 23rem;
+    margin-top: 3rem;
+    background-image: url("../img/Emil-om2jpg.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.584);
 }
 
 a:link {
@@ -162,18 +124,6 @@ header a {
 
 nav a {
     color: rgb(255, 255, 255);
-}
-
-#s1 img:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.263);
-}
-
-#s2 img:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.263);
-}
-
-#s3 img:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.263);
 }
 
 header a {
