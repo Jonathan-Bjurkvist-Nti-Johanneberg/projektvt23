@@ -16,7 +16,7 @@ body {
     's1 s2 s3'
     'ft ft ft'
     ;
-    grid-template-rows: 10rem 3rem 10rem 1px 25rem 20rem;
+    grid-template-rows: 10rem 3rem 10rem 1px 25rem 19rem;
 }
 
 header {
@@ -150,6 +150,43 @@ footer {
     grid-area: ft;
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-areas:
+    'el el el'
+    'pj pj pj'
+    'jb jb jb'
+    'nt nt nt'
+    'nl nl nl'
+    ;
+    grid-template-rows: 5rem 3rem 2rem 2rem;
+}
+
+#emil-logo {
+    grid-area: el;
+    margin: 1rem;
+    width: 12rem;
+    height: auto;
+}
+
+#ft_pjvt23 {
+    grid-area: pj;
+    margin: 1rem;
+}
+
+#ft_jb {
+    grid-area: jb;
+    margin: 1rem;
+}
+
+#ft_nti {
+    grid-area: nt;
+    margin: 1rem;
+}
+
+#nti-logo {
+    grid-area: nl;
+    width: 4rem;
+    margin: 1rem;margin-top: 2rem;
 }
 
 a:link {
@@ -199,4 +236,217 @@ nav a:hover {
 
 #hem:hover {
     text-shadow: 0px 0px 20px rgb(0, 204, 41);
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: rgb(255, 0, 0);
+    }
+
+    #wrapper-index {
+        min-height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas:
+        'hd hd hd'
+        'nv nv nv'
+        'be be be'
+        'li li li'
+        's1 s1 s1'
+        's2 s2 s2' 
+        's3 s3 s3'
+        'ft ft ft'
+        ;
+        grid-template-rows: 4rem 3rem 6rem 1px 25rem 19rem;
+    }
+    
+    header {
+        display: grid;
+        grid-area: hd;
+        width: 100%;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    
+    #hamburger {
+        border: 1px solid #ffffff;
+        height: 1.5rem;
+        width: 2.5rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 0.7rem;
+    }
+
+    nav {
+        display: grid;
+        grid-area: nv;
+        width: 100vw;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        font-weight: bold;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: solid rgb(43, 43, 43);
+    }
+    
+    #sträck1 {
+        border-left: solid rgb(43, 43, 43);
+        height: 3rem;
+        width: 1px;
+    }
+    
+    #sträck2 {
+        border-left: solid rgb(43, 43, 43);
+        height: 3rem;
+        width: 1px;
+    }
+    #sträck3 {
+        border-left: solid rgb(43, 43, 43);
+        height: 3rem;
+        width: 1px;
+    }
+    
+    #beskrivning {
+        grid-area: be;
+        background-image: url("../img/bakgrund.jpg");
+        width: 100vw;
+        background-size: cover;
+        background-position-y: -10rem;
+        background-position: center;
+        border-top: solid rgb(43, 43, 43);
+        display: flex;
+    }
+    
+    #beskrivning p {
+        margin-left: 3rem;
+        width: 40vw;
+        font-size: 0.8rem;
+        font-family: Roboto;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    
+    #tiktok {
+        display: block;
+        width: 40px;
+        height: auto;
+        margin: 4vh;margin-top: 13vh;
+    }
+    
+    #line_be-section {
+        grid-area: li;
+        border-top: 2px solid rgb(217, 217, 217);
+    }
+    
+    section {
+        margin: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        padding-left: 1.2rem;
+    }
+    
+    #s1 {
+        display: grid;
+        grid-area: s1;
+        text-align: center;
+        font-size: 1rem;
+        width: 25vw;
+    }
+    
+    #s1 img {
+        height: 12rem;
+        width: auto;
+    }
+    
+    #s2 {
+        display: grid;
+        grid-area: s2;
+        text-align: center;
+        font-size: 1rem;
+        width: 25vw;
+    }
+    
+    #s2 img {
+        height: 12rem;
+        width: auto;
+    }
+    
+    #s3 {
+        display: grid;
+        grid-area: s3;
+        text-align: center;
+        font-size: 1rem;
+        width: 25vw;
+    }
+    
+    #s3 img {
+        height: 19rem;
+        width: 19rem;
+    }
+    
+    footer {
+        display: grid;
+        grid-area: ft;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-areas:
+        'el el el'
+        'pj pj pj'
+        'jb jb jb'
+        'nt nt nt'
+        'nl nl nl'
+        ;
+        grid-template-rows: 5rem 3rem 2rem 2rem;
+    }
+    
+    #emil-logo {
+        grid-area: el;
+        margin: 1rem;
+        width: 12rem;
+        height: auto;
+    }
+    
+    #ft_pjvt23 {
+        grid-area: pj;
+        margin: 1rem;
+    }
+    
+    #ft_jb {
+        grid-area: jb;
+        margin: 1rem;
+    }
+    
+    #ft_nti {
+        grid-area: nt;
+        margin: 1rem;
+    }
+    
+    #nti-logo {
+        grid-area: nl;
+        width: 4rem;
+        margin: 1rem;margin-top: 2rem;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    header a {
+        color: white;
+    }
+    
+    nav a {
+        color: rgb(255, 255, 255);
+    }
 }

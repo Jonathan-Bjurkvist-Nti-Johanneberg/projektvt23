@@ -16,7 +16,7 @@ body {
     's1 s2 s3'
     'ft ft ft'
     ;
-    grid-template-rows:  10rem 3rem 10rem 1px 25rem 20rem;
+    grid-template-rows:  10rem 3rem 10rem 1px 25rem 19rem;
 }
 
 header {
@@ -156,6 +156,43 @@ footer {
     grid-area: ft;
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-areas:
+    'el el el'
+    'pj pj pj'
+    'jb jb jb'
+    'nt nt nt'
+    'nl nl nl'
+    ;
+    grid-template-rows: 5rem 3rem 2rem 2rem;
+}
+
+#emil-logo {
+    grid-area: el;
+    margin: 1rem;
+    width: 12rem;
+    height: auto;
+}
+
+#ft_pjvt23 {
+    grid-area: pj;
+    margin: 1rem;
+}
+
+#ft_jb {
+    grid-area: jb;
+    margin: 1rem;
+}
+
+#ft_nti {
+    grid-area: nt;
+    margin: 1rem;
+}
+
+#nti-logo {
+    grid-area: nl;
+    width: 4rem;
+    margin: 1rem;margin-top: 2rem;
 }
 
 a:link {
