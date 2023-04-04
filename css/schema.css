@@ -252,3 +252,258 @@ nav a:hover {
 #hem:hover {
     text-shadow: 0px 0px 20px rgb(0, 204, 41);
 }
+
+@media screen and (max-width:600px) {
+    body {
+        margin: 0px;
+        font-family:Roboto;
+        font-weight: lighter;
+    }
+
+    #wrapper-schema {
+        display: grid;
+        min-height: 100vh;
+        width: 100vw;
+        grid-template-areas:
+        'hd hd hd'
+        'nv nv nv'
+        's1 as as'
+        's2 as as'
+        'l1 l1 l1'
+        's3 s3 s3'
+        'ft ft ft'
+        ;
+        grid-template-rows: 5rem 2.5rem 8rem 18rem 2vh 43rem 19rem;
+    }
+
+    header {
+        display: grid;
+        grid-area: hd;
+        width: 100%;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    
+    nav {
+        display: grid;
+        grid-area: nv;
+        width: 100vw;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 0.8rem;
+        font-weight: bold;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: solid rgb(43, 43, 43);
+    
+    }
+    
+    #sträck1 {
+        border-left: solid rgb(43, 43, 43);
+        height: 2.5rem;
+        width: 1px;
+    }
+    
+    #sträck2 {
+        border-left: solid rgb(43, 43, 43);
+        height: 2.5rem;
+        width: 1px;
+    }
+    #sträck3 {
+        border-left: solid rgb(43, 43, 43);
+        height: 2.5rem;
+        width: 1px;
+    }
+    
+    #s1 {
+        display: grid;
+        grid-area: s1;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-left: 4vw;
+        margin-top: 1rem;
+        width: 30vw;
+    }
+
+    #s2 {
+        display: grid;
+        grid-area: s2;
+        font-size: 1rem;
+        margin-left: 4vw;
+        width: 30vw;
+    }
+
+    aside {
+        display: grid;
+        grid-area: as;
+        width: 13rem;
+        height: 13rem;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        background-image: url("../img/Emil-face.jpg");
+        background-size: cover;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.584);
+    }
+
+    #line {
+        margin-top: 2.5rem;
+        grid-area: l1;
+        height: 0px;
+        width: 91%;
+        border: 2px solid rgb(232, 232, 232);
+    }
+
+    #s3 {
+        display: grid;
+        grid-area: s3;
+        margin: 2rem;margin-top: 4rem;
+        background-color: rgb(32, 32, 32);
+        grid-template-areas: 
+        'img img pt pt'
+        'img img kr kr'
+        'sb sb sb sb'
+        'af af af af'
+        ;
+        grid-template-rows: 4rem 0rem 10rem 4rem;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.787);
+    }
+
+    #s3 #produkt-schema-img {
+        display: grid;
+        grid-area: img;
+        background-image: url("../img/schema-produkt.jpg");
+        background-size: cover;
+        margin: 2rem;
+        height: 10rem;
+        width: 10rem;
+        justify-content: left;
+        align-items: center;
+        box-shadow: 0px 0px 20px black;
+    }
+
+#s3-titel {
+    display: grid;
+    grid-area: pt;
+    margin: 2rem 2rem 0rem -4rem;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#s3-pris {
+    display: grid;
+    grid-area: kr;
+    margin: 2rem 2rem 0rem -4rem;
+    color: rgb(224, 224, 224);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#s3-beskrivning {
+    display: grid;
+    grid-area: sb;
+    font-size: 1rem;
+    color: white;
+    margin:2rem;margin-top: 9rem;
+}
+
+#s3-affär {
+    display: grid;
+    grid-area: af;
+    font-size: 1rem;
+    color: white;
+    margin:2rem;margin-top: 15rem;
+    padding-right: 2rem;
+}
+
+footer {
+    display: grid;
+    grid-area: ft;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas:
+    'el el el'
+    'pj pj pj'
+    'jb jb jb'
+    'nt nt nt'
+    'nl nl nl'
+    ;
+    grid-template-rows: 5rem 3rem 2rem 2rem;
+}
+
+#emil-logo {
+    grid-area: el;
+    margin: 1rem;
+    width: 12rem;
+    height: auto;
+}
+
+#ft_pjvt23 {
+    grid-area: pj;
+    margin: 1rem;
+}
+
+#ft_jb {
+    grid-area: jb;
+    margin: 1rem;
+}
+
+#ft_nti {
+    grid-area: nt;
+    margin: 1rem;
+}
+
+#nti-logo {
+    grid-area: nl;
+    width: 4rem;
+    margin: 1rem;margin-top: 2rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+}
+
+header a {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.47);
+    transition: text-shadow 0.1s ease;
+}
+
+header a:hover {
+    text-shadow: 0px 0px 20px rgb(0, 204, 41);
+}
+
+nav a {
+    transition: text-shadow 0.1s ease;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#hem {
+    transition: text-shadow 0.1s ease;
+}
+
+#hem:hover {
+    text-shadow: 0px 0px 20px rgb(0, 204, 41);
+}
+
+}
